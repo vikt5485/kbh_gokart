@@ -22,7 +22,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     background-color: cadetblue;
-    height: 210px;
+    height: 270px;
     width: 100%;
     padding: 20px;
 }
@@ -41,6 +41,15 @@ footer a {
     color: black;
 }
 
+#footer_3 img {
+    width: 50px;
+    transition: all 0.5s ease;
+}
+
+#footer_3 img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
 
 
 
@@ -118,6 +127,10 @@ p {
         height: 120px;
     }
 
+    #footer_3 img {
+        margin-top: 22px;
+    }
+
     .bund_links {
         display: flex;
         justify-content: space-between;
@@ -160,6 +173,7 @@ p {
     }
 
     .col a {
+        transition: all 0.5s ease;
         position: absolute;
         bottom: 1vw;
         right: 1vw;
@@ -167,10 +181,14 @@ p {
         color: white;
         background-color: black;
         padding: 10px 20px 10px 20px;
+
         font-size: 1.6rem;
         font-family: 'Roboto', sans-serif;
         line-height: 1.9rem;
     }
 
-    .col a:hover {}
+    .col a:hover {
+        transform: scale(1.08);
+
+    }
 }
