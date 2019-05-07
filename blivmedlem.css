@@ -1,0 +1,41 @@
+img {
+    width: 100%;
+}
+
+#blivmedlem .sectionwrapper {
+    /* parent flex */
+    background-color: ghostwhite;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#blivmedlem .txt {
+    /* child flex */
+    flex-grow: 3;
+    flex-basis: 300px;
+
+    margin: auto;
+    padding: 10px;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+#blivmedlem .image {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: auto;
+    padding: 10px;
+}
