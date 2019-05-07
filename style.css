@@ -13,8 +13,62 @@ body {
 }
 
 /* HEADER */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: 15vh;
+    background-color: cadetblue;
+    z-index: 100;
+}
 
+header img {
+    width: 100px;
+    margin: 5px;
+}
 
+/* NAV */
+.hidden {
+    transform: translateX(100%)
+}
+
+#menuknap {
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+#menu {
+    padding: 0;
+    list-style-type: none;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    margin: 0;
+}
+
+header li {
+    width: 100vw;
+    background-color: cadetblue;
+    text-align: right;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: cadetblue;
+    padding: 20px;
+    line-height: 2.4;
+}
 
 /* FOOTER */
 footer {
@@ -51,9 +105,6 @@ footer a {
     transition: 0.5s;
 }
 
-
-
-
 section {
     padding: 20px;
 }
@@ -75,9 +126,9 @@ p {
 #splash {
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/splash_billede.jpg);
+    background-image: url(assets/splash_billede.png);
     background-size: cover;
-    background-position: 15% 0%;
+    background-position: 14%;
     max-width: none;
     display: flex;
     justify-content: flex-end;
@@ -121,6 +172,12 @@ p {
 
 /** DESKTOP MEDIA QUERY **/
 @media only screen and (min-width: 850px) {
+    header {
+        height: 10vh;
+        background-color: cadetblue;
+    }
+
+
     footer {
         flex-direction: row;
         justify-content: space-around;
