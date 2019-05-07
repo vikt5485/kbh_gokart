@@ -17,7 +17,37 @@ body {
     height: 100%;
 }
 
-/* HEADER */
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+
+p {
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9rem;
+}
+
+section {
+    padding: 20px;
+}
+
+.txt {
+    padding: 10px;
+}
+
+/**** HEADER ****/
 header {
     position: fixed;
     display: flex;
@@ -38,7 +68,7 @@ header img {
     margin: 5px;
 }
 
-/* NAV */
+/** NAV **/
 .hidden {
     transform: translateX(100%)
 }
@@ -88,7 +118,7 @@ header li a:hover {
     color: #AA0009;
 }
 
-/* FOOTER */
+/**** FOOTER ****/
 footer {
     border-top: 6px solid #FFC91F;
     display: flex;
@@ -125,34 +155,15 @@ footer a {
     transition: 0.5s;
 }
 
-section {
-    padding: 20px;
+
+/**** FORSIDE ****/
+#forside {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h1 {
-    font-size: 2.8rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-h2 {
-    font-size: 1.9rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    color: white;
-}
-
-
-p {
-    font-size: 1.6rem;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.9rem;
-}
-
-.txt {
-    padding: 10px;
+#forside h1 {
+    margin-top: 0;
 }
 
 /* SPLASH */
@@ -182,11 +193,6 @@ p {
     margin-bottom: 20px;
 }
 
-
-.bund_links {
-    display: none;
-}
-
 .pulse {
     animation-name: pulse_kf;
     animation-duration: 1s;
@@ -207,17 +213,13 @@ p {
     }
 }
 
+.bund_links {
+    display: none;
+}
 
 
 
-
-
-
-
-/*BLIV MEDLEM CSS*/
-
-
-
+/**** BLIV MEDLEM CSS ****/
 img {
     width: 100%;
 }
@@ -250,12 +252,11 @@ img {
     padding: 10px;
 }
 
-/* KALENDER */
+/**** KALENDER ****/
 
 
-/*om os*/
 
-/********** OM OS **********/
+
 
 /*
 
@@ -267,7 +268,7 @@ FFC91F gul
 */
 
 
-
+/***** OM OS *****/
 #om_os .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -289,9 +290,7 @@ FFC91F gul
 }
 
 
-/***********KONTAKT*********/
-
-
+/***** KONTAKT *****/
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -312,14 +311,6 @@ FFC91F gul
     height: 100px;
     background-color: aqua;
 }
-
-
-
-
-
-
-
-
 
 
 /** DESKTOP MEDIA QUERY **/
@@ -386,7 +377,7 @@ FFC91F gul
 
     .bund_links {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 20px;
     }
 
