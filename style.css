@@ -295,8 +295,8 @@ img {
 
 //////////*om os*///////////
 
-#om_os .sectionwrapper {
 
+#om_os .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -305,6 +305,7 @@ img {
 
 
 #om_os .txt1 {
+    margin-top: 15vh;
     flex-basis: 300px;
     flex-grow: 1;
 }
