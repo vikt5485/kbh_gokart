@@ -226,3 +226,25 @@ p {
     margin: auto;
     padding: 10px;
 }
+
+
+//////////*om os*///////////
+
+#om_os .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+#om_os .txt1 {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#om_os .video {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
