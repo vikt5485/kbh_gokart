@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+/* HEADER */
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: cadetblue;
+    height: 270px;
+    width: 100%;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 5px 0;
+}
+
+footer p {
+    margin: 0 0 5px 0;
+}
+
+footer a {
+    color: black;
+}
+
+#footer_3 img {
+    width: 50px;
+    transition: all 0.5s ease;
+}
+
+#footer_3 img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+
+
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+p {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9rem;
+}
+
+/* SPLASH */
+#splash {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/splash_billede.jpg);
+    background-size: cover;
+    background-position: 15% 0%;
+    max-width: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#splash_arrow {
+    background-image: url(assets/arrow.svg);
+    width: 100px;
+    height: 59.01639344262295px;
+    background-size: 100%;
+    margin-bottom: 20px;
+}
+
+.bund_links {
+    display: none;
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+
+
+/** DESKTOP MEDIA QUERY **/
+@media only screen and (min-width: 850px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+    }
+
+    #footer_3 img {
+        margin-top: 22px;
+    }
+
+    .bund_links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .col {
+        position: relative;
+        width: 30vw;
+        height: 15vw;
+        margin-left: 20px;
+    }
+
+    .col:nth-child(1) {
+        background-image: url(assets/bliv_medlem_forside.JPG);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(2) {
+        background-image: url(assets/kalender_forside.JPG);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(3) {
+        background-image: url(assets/om_os_forside.JPG);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(4) {
+        background-image: url(assets/kontakt_forside.JPG);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:last-child {
+        margin-right: 20px;
+    }
+
+    .col a {
+        transition: all 0.5s ease;
+        position: absolute;
+        bottom: 1vw;
+        right: 1vw;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px 20px 10px 20px;
+
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.9rem;
+    }
+
+    .col a:hover {
+        transform: scale(1.08);
+
+    }
+}
