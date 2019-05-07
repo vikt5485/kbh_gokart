@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -75,7 +79,7 @@ p {
 #splash {
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/splash_billede.jpg);
+    background-image: url(billeder/forside_billede.png);
     background-size: cover;
     background-position: 15% 0%;
     max-width: none;
@@ -191,4 +195,34 @@ p {
         transform: scale(1.08);
 
     }
+}
+
+
+
+//////*BLIV MEDLEM CSS*/////////
+
+#blivmedlem .sectionwrapper {
+    /* parent flex */
+    background-color: ghostwhite;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#blivmedlem .txt {
+    /* child flex */
+    flex-grow: 3;
+    flex-basis: 300px;
+
+    margin: auto;
+    padding: 10px;
+}
+
+#blivmedlem .image {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: auto;
+    padding: 10px;
 }
