@@ -295,6 +295,15 @@ img {
 
 //////////*om os*///////////
 
+/*
+
+00032A mørkeblå
+00032A lysere blå med 85% opacity
+AA0009 rød
+FFC91F gul
+
+*/
+
 
 #om_os .sectionwrapper {
     display: flex;
@@ -314,3 +323,5 @@ img {
     flex-basis: 300px;
     flex-grow: 1;
 }
+
+#om_os .img {}
