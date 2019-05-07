@@ -22,6 +22,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
+    margin-top: 0;
 }
 
 h2 {
@@ -45,6 +46,13 @@ section {
 
 .txt {
     padding: 10px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
 }
 
 /**** HEADER ****/
@@ -157,14 +165,7 @@ footer a {
 
 
 /**** FORSIDE ****/
-#forside {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-#forside h1 {
-    margin-top: 0;
-}
 
 /* SPLASH */
 #splash {
@@ -243,12 +244,11 @@ img {
 
 
 #blivmedlem .image {
-
     flex-grow: 1;
     flex-basis: 400px;
     flex-grow: 3;
     flex-basis: 300px;
-    margin: auto;
+    margin-top: 110px;
     padding: 10px;
 }
 
@@ -312,9 +312,8 @@ FFC91F gul
     background-color: aqua;
 }
 
-
-/** DESKTOP MEDIA QUERY **/
-@media only screen and (min-width: 850px) {
+/** TABLET MEDIA QUERY **/
+@media only screen and (min-width: 750px) {
     header {
         position: sticky;
         background-color: #00032A;
@@ -322,10 +321,9 @@ FFC91F gul
 
     header li a {
         padding: 0;
-        margin: 0 20px;
-        font-size: 2rem;
+        margin: 0 10px;
+        font-size: 1.5rem;
     }
-
 
     #menuknap {
         display: none;
@@ -358,6 +356,10 @@ FFC91F gul
     }
 
     #blivmedlem h1 {
+        margin-top: 0;
+    }
+
+    #blivmedlem .image {
         margin-top: 0;
     }
 
@@ -433,5 +435,18 @@ FFC91F gul
     .col a:hover {
         transform: scale(1.08);
 
+    }
+
+}
+
+
+
+
+/** DESKTOP MEDIA QUERY **/
+@media only screen and (min-width: 885px) {
+    header li a {
+        padding: 0;
+        margin: 0 20px;
+        font-size: 2rem;
     }
 }
