@@ -12,8 +12,9 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: rgba(0, 3, 42, 0.75);
     margin: 0;
+    height: 100%;
 }
 
 /* HEADER */
@@ -24,9 +25,10 @@ header {
     flex-direction: row;
     width: 100vw;
     height: 15vh;
-    background-color: cadetblue;
+    background-color: #00032A;
     z-index: 100;
     color: white;
+    border-bottom: 1vh solid #AA0009;
 }
 
 header img {
@@ -57,13 +59,13 @@ header img {
     transition: all .3s;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 15vh;
     margin: 0;
 }
 
 header li {
     width: 100vw;
-    background-color: cadetblue;
+    background-color: #00032A;
     text-align: right;
 }
 
@@ -72,20 +74,30 @@ header li a {
     color: white;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: cadetblue;
-    padding: 20px;
+    background-color: #00032A;
+    padding: 10px 20px 10px 100px;
     line-height: 2.4;
+}
+
+header li a:hover {
+    color: #AA0009;
+}
+
+.selected {
+    color: #AA0009;
 }
 
 /* FOOTER */
 footer {
+    border-top: 6px solid #FFC91F;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: cadetblue;
+    background-color: #00032A;
     height: 270px;
     width: 100%;
     padding: 20px;
+    color: white;
 }
 
 footer h3 {
@@ -99,7 +111,7 @@ footer p {
 }
 
 footer a {
-    color: black;
+    color: white;
 }
 
 #footer_3 img {
@@ -120,17 +132,20 @@ h1 {
     font-size: 2.8rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: white;
 }
 
 h2 {
     font-size: 1.9rem;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
+    color: white;
 }
 
 
 p {
     font-size: 1.6rem;
+    color: white;
     font-family: 'Roboto', sans-serif;
     line-height: 1.9rem;
 }
@@ -140,9 +155,9 @@ p {
     width: 100vw;
     height: 85vh;
 
-    background-image: url(assets/splash_billede.png);
+    background-image: url(billeder/forside_billede_2.png);
     background-size: cover;
-    background-position: 14%;
+    background-position: 6% 0%;
     max-width: none;
     display: flex;
     justify-content: flex-end;
@@ -161,6 +176,7 @@ p {
     background-size: 100%;
     margin-bottom: 20px;
 }
+
 
 .bund_links {
     display: none;
@@ -192,7 +208,10 @@ p {
 
 
 
+
 /*BLIV MEDLEM CSS*/
+
+
 
 img {
     width: 100%;
@@ -210,21 +229,39 @@ img {
 
 #blivmedlem .txt {
     /* child flex */
-    flex-grow: 1;
-    flex-basis: 400px;
+    flex-grow: 3;
+    flex-basis: 300px;
     margin-top: 10vh;
     padding: 10px;
 }
 
 
 #blivmedlem .image {
+
     flex-grow: 1;
     flex-basis: 400px;
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: auto;
     padding: 10px;
 }
 
+/* KALENDER */
+
 
 /*om os*/
+
+/********** OM OS **********/
+
+/*
+
+00032A mørkeblå
+00032A lysere blå med 85% opacity
+AA0009 rød
+FFC91F gul
+
+*/
+
 
 
 #om_os .sectionwrapper {
@@ -237,14 +274,49 @@ img {
 
 #om_os .txt1 {
     margin-top: 15vh;
-    flex-basis: 300px;
+    flex-basis: 400px;
     flex-grow: 1;
 }
 
 #om_os .video {
-    flex-basis: 300px;
+    flex-basis: 400px;
     flex-grow: 1;
 }
+
+
+/***********KONTAKT*********/
+
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#kontakt .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+#kontakt .kort {
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /** DESKTOP MEDIA QUERY **/
@@ -252,7 +324,7 @@ img {
     header {
         position: sticky;
         height: 15vh;
-        background-color: cadetblue;
+        background-color: #00032A;
     }
 
     header li a {
@@ -320,25 +392,25 @@ img {
     }
 
     .col:nth-child(1) {
-        background-image: url(assets/bliv_medlem_forside.JPG);
+        background-image: url(billeder/vaerksted1.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(2) {
-        background-image: url(assets/kalender_forside.JPG);
+        background-image: url(billeder/daek.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(3) {
-        background-image: url(assets/om_os_forside.JPG);
+        background-image: url(billeder/bane.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(4) {
-        background-image: url(assets/kontakt_forside.JPG);
+        background-image: url(billeder/opbevaring1.png);
         background-size: cover;
         background-position: 70% 0;
     }
@@ -354,9 +426,8 @@ img {
         right: 1vw;
         text-decoration: none;
         color: white;
-        background-color: black;
+        background-color: #00032A;
         padding: 10px 20px 10px 20px;
-
         font-size: 1.6rem;
         font-family: 'Roboto', sans-serif;
         line-height: 1.9rem;
