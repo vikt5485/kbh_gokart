@@ -26,10 +26,13 @@ header {
     height: 15vh;
     background-color: cadetblue;
     z-index: 100;
+    color: white;
 }
 
 header img {
-    width: 100px;
+    position: absolute;
+    top: 22px;
+    width: 300px;
     margin: 5px;
 }
 
@@ -66,7 +69,7 @@ header li {
 
 header li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     background-color: cadetblue;
@@ -135,7 +138,8 @@ p {
 /* SPLASH */
 #splash {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
+
     background-image: url(assets/splash_billede.png);
     background-size: cover;
     background-position: 14%;
@@ -144,6 +148,10 @@ p {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+}
+
+#splash_div {
+    padding: 15vh 0 0 0;
 }
 
 #splash_arrow {
@@ -180,13 +188,113 @@ p {
 
 
 
+
+
+
+
+/*BLIV MEDLEM CSS*/
+
+img {
+    width: 100%;
+}
+
+
+#blivmedlem .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+#blivmedlem .txt {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin-top: 10vh;
+    padding: 10px;
+}
+
+
+#blivmedlem .image {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 10px;
+}
+
+
+/*om os*/
+
+
+#om_os .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+#om_os .txt1 {
+    margin-top: 15vh;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#om_os .video {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+
 /** DESKTOP MEDIA QUERY **/
 @media only screen and (min-width: 850px) {
     header {
-        height: 10vh;
+        position: sticky;
+        height: 15vh;
         background-color: cadetblue;
     }
 
+    header li a {
+        padding: 0;
+        margin: 0 20px;
+        font-size: 2rem;
+    }
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+    }
+
+    #menu {
+        top: 8vh;
+
+    }
+
+    #splash_div {
+        padding: 0;
+    }
+
+    #om_os .txt1 {
+        margin-top: 0;
+    }
+
+    #blivmedlem .txt {
+        margin-top: 0vh;
+    }
+
+    #blivmedlem h1 {
+        margin-top: 0;
+    }
 
     footer {
         flex-direction: row;
@@ -258,59 +366,4 @@ p {
         transform: scale(1.08);
 
     }
-}
-
-
-
-//////*BLIV MEDLEM CSS*/////////
-
-img {
-    width: 100%;
-}
-
-#blivmedlem .sectionwrapper {
-    /* parent flex */
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-#blivmedlem .txt {
-    /* child flex */
-    flex-grow: 3;
-    flex-basis: 300px;
-    margin-top: 10vh;
-    padding: 10px;
-}
-
-
-#blivmedlem .image {
-    flex-grow: 3;
-    flex-basis: 300px;
-    margin: auto;
-    padding: 10px;
-}
-
-
-//////////*om os*///////////
-
-
-#om_os .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-
-#om_os .txt1 {
-    margin-top: 15vh;
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-#om_os .video {
-    flex-basis: 300px;
-    flex-grow: 1;
 }
