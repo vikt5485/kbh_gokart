@@ -180,6 +180,106 @@ p {
 
 
 
+
+
+
+//////*BLIV MEDLEM CSS*/////////
+
+img {
+    width: 100%;
+}
+
+#blivmedlem .sectionwrapper {
+    /* parent flex */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#blivmedlem .txt {
+    /* child flex */
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin-top: 10vh;
+    padding: 10px;
+}
+
+
+#blivmedlem .image {
+    flex-grow: 3;
+    flex-basis: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+/********** OM OS **********/
+
+/*
+
+00032A mørkeblå
+00032A lysere blå med 85% opacity
+AA0009 rød
+FFC91F gul
+
+*/
+
+
+#om_os .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+#om_os .txt1 {
+    margin-top: 15vh;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#om_os .video {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+/***********KONTAKT*********/
+
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#kontakt .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+#kontakt .kort {
+    flex-basis: 300px;
+    flex-grow: 1;
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /** DESKTOP MEDIA QUERY **/
 @media only screen and (min-width: 850px) {
     header {
@@ -259,69 +359,3 @@ p {
 
     }
 }
-
-
-
-//////*BLIV MEDLEM CSS*/////////
-
-img {
-    width: 100%;
-}
-
-#blivmedlem .sectionwrapper {
-    /* parent flex */
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-#blivmedlem .txt {
-    /* child flex */
-    flex-grow: 3;
-    flex-basis: 300px;
-    margin-top: 10vh;
-    padding: 10px;
-}
-
-
-#blivmedlem .image {
-    flex-grow: 3;
-    flex-basis: 300px;
-    margin: auto;
-    padding: 10px;
-}
-
-
-//////////*om os*///////////
-
-/*
-
-00032A mørkeblå
-00032A lysere blå med 85% opacity
-AA0009 rød
-FFC91F gul
-
-*/
-
-
-#om_os .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-
-#om_os .txt1 {
-    margin-top: 15vh;
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-#om_os .video {
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-#om_os .img {}
