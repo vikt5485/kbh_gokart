@@ -265,10 +265,6 @@ img {
 }
 
 /**** KALENDER ****/
-#top_txt {
-    margin-top: 110px;
-}
-
 caption {
     border: solid 1px white;
     background: #AA0009;
@@ -341,22 +337,22 @@ tbody a:hover {
 }
 
 #kalender .selected {
-    background: #AA0009;
+    background: white;
     font-weight: 700;
 }
 
 #kalender .selected a {
-    color: white;
+    color: black;
 }
 
 .ons_lob {
-    background-image: url(assets/flag_baggrund.png);
-    background-size: 100%;
-    opacity: 0.5;
+    background-color: #FFC91F;
+
 }
 
 .aflyst {
-    background-color: black;
+    background-color: #AA0009;
+
 }
 
 
@@ -468,14 +464,6 @@ FFC91F gul
 
     #kontakt .txt {
         margin-top: 0;
-    }
-
-    #top_txt {
-        margin-top: 0;
-    }
-
-    table {
-        margin: 0 20px 20px 20px;
     }
 
     footer {
