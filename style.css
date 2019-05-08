@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: rgba(0, 3, 42, 0.75);
+    background-color: #40415F;
     margin: 0;
     height: 100%;
 }
@@ -30,6 +30,12 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     color: white;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 5px 0;
 }
 
 
@@ -139,11 +145,7 @@ footer {
     color: white;
 }
 
-footer h3 {
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 5px 0;
-}
+
 
 footer p {
     margin: 0 0 5px 0;
