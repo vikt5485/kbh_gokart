@@ -265,6 +265,10 @@ img {
 }
 
 /**** KALENDER ****/
+#top_txt {
+    margin-top: 110px;
+}
+
 caption {
     border: solid 1px white;
     background: #AA0009;
@@ -464,6 +468,14 @@ FFC91F gul
 
     #kontakt .txt {
         margin-top: 0;
+    }
+
+    #top_txt {
+        margin-top: 0;
+    }
+
+    table {
+        margin: 0 20px 20px 20px;
     }
 
     footer {
