@@ -1,7 +1,11 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 200%;
+
+    margin-bottom: 15%;
+    margin-left: 0%;
+    padding-left: 0%;
 }
 
 
@@ -9,7 +13,10 @@ td,
 th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding-left: 5%;
+    margin-left: 1%;
+    padding-bottom: 3%;
+    padding-right: 2%;
 }
 
 tr:nth-child(even) {
@@ -24,4 +31,12 @@ tr:nth-child(even) {
         width: 100%;
         justify-content: space-around;
     }
+}
+
+.pkalender {
+    text-align: center;
+}
+
+.red {
+    background-color: indianred;
 }
