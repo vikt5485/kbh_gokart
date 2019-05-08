@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>KGB - Kontakt</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <header></header>
-
-    <section id="kontakt">
-
+    <header>
+        <a href="index.html"><img src="assets/logo/hvid_bred.svg" alt="logo"></a>
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="blivmedlem.html">Bliv medlem</a></li>
+                <li><a href="kalender.html">Kalender</a></li>
+                <li><a href="omos.html">Om os</a></li>
+                <li><a class="selected" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="kontakt">
         <div class="sectionwrapper">
             <div class="txt">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ullam minima, at, voluptatem odit asperiores voluptates modi harum nostrum, dolorem sapiente rem alias reprehenderit eveniet labore repudiandae inventore hic. Dolores?</p>
+                <h1>Kontakt os</h1>
+                <p>Kraftværksvej 10 <br> 2300 København S</p>
+                <p>Tlf: 32 57 76 64<br>Mail: kbh.gokart@sport.dk</p>
+
             </div>
-            <div class="kort"></div>
+            <div id="googleMap" style="width:100%;height:400px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.576628668639!2d12.617213215861353!3d55.678962005152215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652532d3c8da679%3A0x151a8fc50e03878a!2sKraftv%C3%A6rksvej+10%2C+2300+K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1557308378409!5m2!1sda!2sdk" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="sectionwrapper">
@@ -25,5 +49,24 @@
             <div class="img"></div>
             <div class="img"></div>
         </div>
-    </section>
+    </div>
+
+    <footer>
+        <div id="footer_1">
+            <h3>Københavns Gokart Bane</h3>
+            <p>Kraftværksvej 10</p>
+            <p>2300 København S</p>
+        </div>
+        <div id="footer_2">
+            <h3>Kontakt</h3>
+            <p>Tlf: <a href="tel:32 57 76 64">32 57 76 64</a></p>
+            <p>Mail: <a href="mailto:kbh.gokart@sport.dk">kbh.gokart@sport.dk</a></p>
+        </div>
+        <div id="footer_3">
+            <a href="https://www.facebook.com/K%C3%B8benhavns-Gokart-Bane-196927833654210/?epa=SEARCH_BOX" target="_blank">
+                <img src="assets/face_hvid.svg" alt="facebook link">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body></html>

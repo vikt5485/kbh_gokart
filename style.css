@@ -12,28 +12,77 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #40415F;
     margin: 0;
+    height: 100%;
 }
 
-/* HEADER */
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 5px 0;
+}
+
+
+p {
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9rem;
+}
+
+section {
+    padding: 20px;
+}
+
+#forside .txt {
+    padding: 10px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+/**** HEADER ****/
 header {
     position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 100vw;
-    height: 15vh;
-    background-color: cadetblue;
+    height: 110px;
+    background-color: #00032A;
     z-index: 100;
+    color: white;
+    border-bottom: 6px solid #AA0009;
 }
 
 header img {
-    width: 100px;
+    position: absolute;
+    top: 22px;
+    width: 300px;
     margin: 5px;
 }
 
-/* NAV */
+/** NAV **/
 .hidden {
     transform: translateX(100%)
 }
@@ -46,6 +95,7 @@ header img {
     top: 30px;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
+    line-height: 1;
 }
 
 #menu {
@@ -54,49 +104,55 @@ header img {
     transition: all .3s;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 110px;
     margin: 0;
 }
 
 header li {
     width: 100vw;
-    background-color: cadetblue;
+    background-color: #00032A;
     text-align: right;
 }
 
 header li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: cadetblue;
-    padding: 20px;
+    background-color: #00032A;
+    padding: 10px 20px 10px 100px;
     line-height: 2.4;
 }
 
-/* FOOTER */
+header li a:hover {
+    color: #AA0009;
+}
+
+.selected {
+    color: #AA0009;
+}
+
+/**** FOOTER ****/
 footer {
+    border-top: 6px solid #FFC91F;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: cadetblue;
+    background-color: #00032A;
     height: 270px;
     width: 100%;
     padding: 20px;
+    color: white;
 }
 
-footer h3 {
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 5px 0;
-}
+
 
 footer p {
     margin: 0 0 5px 0;
 }
 
 footer a {
-    color: black;
+    color: white;
 }
 
 #footer_3 img {
@@ -109,41 +165,27 @@ footer a {
     transition: 0.5s;
 }
 
-section {
-    padding: 20px;
-}
 
-h1 {
-    font-size: 2.8rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
+/**** FORSIDE ****/
 
-h2 {
-    font-size: 1.9rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-}
-
-
-p {
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.9rem;
-}
 
 /* SPLASH */
 #splash {
     width: 100vw;
-    height: 100vh;
-    background-image: url(assets/splash_billede.png);
+    height: 85vh;
+
+    background-image: url(billeder/forside_billede_2.png);
     background-size: cover;
-    background-position: 14%;
+    background-position: 6% 0%;
     max-width: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+}
+
+#splash_div {
+    padding: 15vh 0 0 0;
 }
 
 #splash_arrow {
@@ -152,10 +194,6 @@ p {
     height: 59.01639344262295px;
     background-size: 100%;
     margin-bottom: 20px;
-}
-
-.bund_links {
-    display: none;
 }
 
 .pulse {
@@ -178,16 +216,17 @@ p {
     }
 }
 
+.bund_links {
+    display: none;
+}
 
 
 
-
-
-//////*BLIV MEDLEM CSS*/////////
-
+/**** BLIV MEDLEM CSS ****/
 img {
     width: 100%;
 }
+
 
 #blivmedlem .sectionwrapper {
     /* parent flex */
@@ -197,24 +236,29 @@ img {
     justify-content: space-between;
 }
 
+
 #blivmedlem .txt {
     /* child flex */
     flex-grow: 3;
     flex-basis: 300px;
-    margin-top: 10vh;
-    padding: 10px;
+    margin-top: 110px;
 }
 
 
 #blivmedlem .image {
+    flex-grow: 1;
+    flex-basis: 400px;
     flex-grow: 3;
     flex-basis: 300px;
-    margin: auto;
+    margin-top: 110px;
     padding: 10px;
 }
 
+/**** KALENDER ****/
 
-/********** OM OS **********/
+
+
+
 
 /*
 
@@ -226,6 +270,7 @@ FFC91F gul
 */
 
 
+/***** OM OS *****/
 #om_os .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -235,19 +280,61 @@ FFC91F gul
 
 
 #om_os .txt1 {
-    margin-top: 15vh;
-    flex-basis: 300px;
+    margin-top: 110px;
+    flex-basis: 400px;
     flex-grow: 1;
+    padding: 10px;
 }
 
 #om_os .video {
-    flex-basis: 300px;
+    flex-basis: 400px;
     flex-grow: 1;
+    margin-top: 70px;
 }
 
-/*********KONTAKT*********/
+#om_os .img {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+    position: relative;
+    width: 30vw;
+    height: 15vw;
+    margin-left: 20px;
+}
+
+#om_os .img:nth-child(1) {
+    background-image: url(billeder/gokart2.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+#om_os .img:nth-child(2) {
+    background-image: url(billeder/vareksted2.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+#om_os .img:nth-child(3) {
+    background-image: url(billeder/billard.png);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+
+    #om_os .img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+
+    #om_os .overskrift_2 {
+        text-align: left;
+    }
+}
 
 
+/***** KONTAKT *****/
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -255,38 +342,120 @@ FFC91F gul
     justify-content: space-between;
 }
 
+#kontakt h1 {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+
 #kontakt .txt {
     flex-basis: 300px;
     flex-grow: 1;
-
+    margin: 20px;
 }
 
-#kontakt .kort {
+
+
+#googleMap {
     flex-basis: 300px;
     flex-grow: 1;
     width: 300px;
-    height: 100px;
-    background-color: aqua;
+    height: 80px;
+    margin-top: 70px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 70px;
 }
 
 
+#kontakt .img {
+    flex-basis: 200px;
+    flex-grow: 1;
+    position: relative;
+    width: 30vw;
+    height: 15vw;
+    margin-left: 20px;
+}
 
+#kontakt .img:nth-child(1) {
+    background-image: url(billeder/bane.png);
+    background-size: cover;
+    background-position: 100%;
+}
 
+#kontakt .img:nth-child(2) {
+    background-image: url(billeder/gokart1.png);
+    background-size: cover;
+    background-position: 100%;
+}
 
+#kontakt .img:nth-child(3) {
+    background-image: url(billeder/opbevaring2.png);
+    background-size: cover;
+    background-position: 100%;
+}
 
+@media only screen and (max-width: 750px) {
 
+    #kontakt .img {
+        display: none;
+    }
+}
 
-
-
-
-
-/** DESKTOP MEDIA QUERY **/
-@media only screen and (min-width: 850px) {
+/** TABLET MEDIA QUERY **/
+@media only screen and (min-width: 750px) {
     header {
-        height: 10vh;
-        background-color: cadetblue;
+        position: sticky;
+        background-color: #00032A;
     }
 
+    header li a {
+        padding: 0;
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+    }
+
+    #menu {
+        top: 50px;
+
+    }
+
+    #splash_div {
+        padding: 0;
+    }
+
+    #om_os .txt1 {
+        margin-top: 0;
+    }
+
+    #blivmedlem .txt {
+        margin-top: 0;
+    }
+
+    #blivmedlem h1 {
+        margin-top: 0;
+    }
+
+    #blivmedlem .image {
+        margin-top: 0;
+    }
+
+    #kontakt .txt {
+        margin-top: 0;
+    }
 
     footer {
         flex-direction: row;
@@ -300,7 +469,7 @@ FFC91F gul
 
     .bund_links {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 20px;
     }
 
@@ -312,25 +481,25 @@ FFC91F gul
     }
 
     .col:nth-child(1) {
-        background-image: url(assets/bliv_medlem_forside.JPG);
+        background-image: url(billeder/vaerksted1.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(2) {
-        background-image: url(assets/kalender_forside.JPG);
+        background-image: url(billeder/daek.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(3) {
-        background-image: url(assets/om_os_forside.JPG);
+        background-image: url(billeder/bane.png);
         background-size: cover;
         background-position: 70% 0;
     }
 
     .col:nth-child(4) {
-        background-image: url(assets/kontakt_forside.JPG);
+        background-image: url(billeder/opbevaring1.png);
         background-size: cover;
         background-position: 70% 0;
     }
@@ -346,9 +515,8 @@ FFC91F gul
         right: 1vw;
         text-decoration: none;
         color: white;
-        background-color: black;
+        background-color: #00032A;
         padding: 10px 20px 10px 20px;
-
         font-size: 1.6rem;
         font-family: 'Roboto', sans-serif;
         line-height: 1.9rem;
@@ -357,5 +525,18 @@ FFC91F gul
     .col a:hover {
         transform: scale(1.08);
 
+    }
+
+}
+
+
+
+
+/** DESKTOP MEDIA QUERY **/
+@media only screen and (min-width: 885px) {
+    header li a {
+        padding: 0;
+        margin: 0 20px;
+        font-size: 2rem;
     }
 }
