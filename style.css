@@ -280,7 +280,6 @@ caption a {
 
 table {
     margin: 20px;
-    background: #ddd;
     top: 50%;
     left: 50%;
     font-size: 20px;
@@ -305,9 +304,9 @@ table thead th {
 }
 
 table tbody td {
-    border: solid 1px white;
+    border: solid 1px gray;
     height: 5em;
-    background-color: #00032A;
+    background-color: #25254a;
     padding: 0;
 }
 
@@ -350,6 +349,10 @@ tbody a:hover {
     background-image: url(assets/flag_baggrund.png);
     background-size: 100%;
     opacity: 0.5;
+}
+
+.aflyst {
+    background-color: black;
 }
 
 
