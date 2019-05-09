@@ -119,6 +119,7 @@ header li {
     width: 100vw;
     background-color: #00032A;
     text-align: right;
+    margin: 0;
 }
 
 header li a {
@@ -261,8 +262,8 @@ img {
 
 #blivmedlem .txt {
     /* child flex */
-    flex-grow: 3;
-    flex-basis: 300px;
+    flex-grow: 1;
+    flex-basis: 400px;
     margin-top: 110px;
 }
 
@@ -272,7 +273,6 @@ img {
     flex-basis: 400px;
     flex-grow: 3;
     flex-basis: 300px;
-    margin-top: 110px;
     padding: 10px;
 }
 
@@ -308,8 +308,6 @@ table,
 th,
 tr {
     text-align: center;
-
-
 }
 
 table thead th {
@@ -375,17 +373,9 @@ tbody a:hover {
 
 }
 
-
-
-/*
-
-00032A mørkeblå
-00032A lysere blå med 85% opacity
-AA0009 rød
-FFC91F gul
-
-*/
-
+#kalender_wrap .txt {
+    margin-top: 110px;
+}
 
 /***** OM OS *****/
 #om_os .sectionwrapper {
@@ -439,6 +429,7 @@ li {
     margin-left: 0;
 }
 
+
 #om_os .img:nth-child(2) {
     display: none;
 }
@@ -454,11 +445,78 @@ li {
     background-color: rgb(46, 47, 72);
 }
 
+
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: space-between;
+}
+
+/***** KONTAKT *****/
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kontakt .txt {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#kontakt .kort {
+    flex-basis: 400px;
+    flex-grow: 1;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+#kontakt .logo_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+
+#kontakt .logo {
+    flex-basis: 50px;
+    flex-grow: 1;
+    position: relative;
+    margin: 10px;
+    background-repeat: no-repeat;
+    max-width: 15vw;
+    height: 80px;
+}
+
+#kontakt .img {
+    flex-basis: 200px;
+    flex-grow: 1;
+    position: relative;
+    width: 30vw;
+    height: 15vw;
+    margin-left: 20px;
+}
+
+#kontakt .img:nth-child(1) {
+    background-image: url(billeder/gokart2.png);
+    background-size: 100%;
+    background-position: 100%;
+    width: 100%;
+    margin-left: 0;
+}
+
+#kontakt .img:nth-child(2) {
+    display: none;
+}
+
+#kontakt .img:nth-child(3) {
+    display: none;
 }
 
 #txt_kontakt {
@@ -478,15 +536,220 @@ li {
     flex-grow: 1;
 }
 
-
 #googleMap {
     width: 100%;
     text-align: center;
 }
 
 
+/** TABLET MEDIA QUERY **/
+@media only screen and (min-width: 750px) {
+    header {
+        position: sticky;
+        background-color: #00032A;
+    }
 
-@media only screen and (min-width: 840px) {
+    header li a {
+        padding: 0;
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline;
+    }
+
+    #menu {
+        top: 50px;
+
+    }
+
+    #splash_div {
+        padding: 0;
+    }
+
+    #om_os .img:nth-child(2) {
+        background-image: url(billeder/vareksted2.png);
+        background-size: cover;
+        background-position: 100%;
+        display: block;
+    }
+
+    #om_os .img:nth-child(3) {
+        background-image: url(billeder/billard.png);
+        background-size: cover;
+        display: block;
+    }
+
+    #om_os .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #om_os .txt1 {
+        margin-top: 0;
+        padding: 10px;
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
+    #om_os .video {
+        margin-top: 10px;
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
+    #kalender_wrap .txt {
+        margin-top: 0;
+    }
+
+
+    #blivmedlem .txt {
+        margin-top: 0;
+
+    }
+
+    #blivmedlem h1 {
+        margin-top: 0;
+    }
+
+    #blivmedlem .image {
+        margin-top: 0;
+    }
+
+
+    #kontakt #txt_kontakt {
+        margin-top: 0;
+    }
+
+    #kontakt .txt {
+        margin-top: 10px;
+    }
+
+    #kontakt .img {
+        margin: 10px;
+        width: 100%;
+        background-size: 100%;
+        background-position: 100%;
+    }
+
+    #kontakt .img:nth-child(1) {
+        background-image: url(billeder/gokart3.png);
+        background-repeat: no-repeat;
+
+    }
+
+    #kontakt .img:nth-child(2) {
+        background-image: url(billeder/opbevaring2.png);
+        display: block;
+        background-repeat: no-repeat;
+    }
+
+    #kontakt .img:nth-child(3) {
+        background-image: url(billeder/bane.png);
+        display: block;
+        background-repeat: no-repeat;
+
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+    }
+
+    #footer_3 img {
+        margin-top: 22px;
+    }
+
+    .bund_links {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .col {
+        position: relative;
+        width: 35vw;
+        height: 145px;
+        margin-left: 20px;
+    }
+
+    .col:nth-child(1) {
+        background-image: url(billeder/vaerksted1.png);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(2) {
+        background-image: url(billeder/daek.png);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(3) {
+        background-image: url(billeder/bane.png);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:nth-child(4) {
+        background-image: url(billeder/opbevaring1.png);
+        background-size: cover;
+        background-position: 70% 0;
+    }
+
+    .col:last-child {
+        margin-right: 20px;
+    }
+
+    .col a {
+        transition: all 0.5s ease;
+        position: absolute;
+        bottom: 1vw;
+        right: 1vw;
+        text-decoration: none;
+        color: white;
+        background-color: #00032A;
+        padding: 10px 20px 10px 20px;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.9rem;
+    }
+
+    .col a:hover {
+        transform: scale(1.08);
+    }
+
+}
+
+/** DESKTOP MEDIA QUERY **/
+@media only screen and (min-width: 885px) {
+    header li a {
+        padding: 0;
+        margin: 0 20px;
+        font-size: 2rem;
+    }
+
+    #splash_txt {
+        width: 500px;
+        height: 14vh;
+        margin-top: 27.5vh;
+    }
+
+    #splash_txt h1 {
+        font-size: 7rem;
+    }
 
     #om_os .overskrift_2 {
         text-align: left;
@@ -495,184 +758,5 @@ li {
     #om_os .video {
         flex-basis: 400px;
         flex-grow: 1;
-
     }
-
-    /** TABLET MEDIA QUERY **/
-    @media only screen and (min-width: 750px) {
-        header {
-            position: sticky;
-            background-color: #00032A;
-        }
-
-        header li a {
-            padding: 0;
-            margin: 0 10px;
-            font-size: 1.5rem;
-        }
-
-        #menuknap {
-            display: none;
-        }
-
-        #menu.hidden {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        #menu li {
-            display: inline;
-        }
-
-        #menu {
-            top: 50px;
-
-        }
-
-        #splash_div {
-            padding: 0;
-        }
-
-        #om_os .img:nth-child(2) {
-            background-image: url(billeder/vareksted2.png);
-            background-size: cover;
-            background-position: 100%;
-            display: block;
-        }
-
-        #om_os .img:nth-child(3) {
-            background-image: url(billeder/billard.png);
-            background-size: cover;
-            display: block;
-        }
-
-        #om_os .sectionwrapper {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
-
-        #om_os .txt1 {
-            margin-top: 0;
-            padding: 10px;
-            flex-basis: 300px;
-            flex-grow: 1;
-        }
-
-        #om_os .video {
-            margin-top: 10px;
-            flex-basis: 300px;
-            flex-grow: 1;
-        }
-
-
-        #blivmedlem .txt {
-            margin-top: 0;
-
-        }
-
-        #blivmedlem h1 {
-            margin-top: 0;
-        }
-
-        #blivmedlem .image {
-            margin-top: 0;
-        }
-
-        #kontakt #txt_kontakt {
-            margin-top: 0;
-        }
-
-
-        footer {
-            flex-direction: row;
-            justify-content: space-around;
-            height: 120px;
-        }
-
-        #footer_3 img {
-            margin-top: 22px;
-        }
-
-        .bund_links {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .col {
-            position: relative;
-            width: 30vw;
-            height: 15vw;
-            margin-left: 20px;
-        }
-
-        .col:nth-child(1) {
-            background-image: url(billeder/vaerksted1.png);
-            background-size: cover;
-            background-position: 70% 0;
-        }
-
-        .col:nth-child(2) {
-            background-image: url(billeder/daek.png);
-            background-size: cover;
-            background-position: 70% 0;
-        }
-
-        .col:nth-child(3) {
-            background-image: url(billeder/bane.png);
-            background-size: cover;
-            background-position: 70% 0;
-        }
-
-        .col:nth-child(4) {
-            background-image: url(billeder/opbevaring1.png);
-            background-size: cover;
-            background-position: 70% 0;
-        }
-
-        .col:last-child {
-            margin-right: 20px;
-        }
-
-        .col a {
-            transition: all 0.5s ease;
-            position: absolute;
-            bottom: 1vw;
-            right: 1vw;
-            text-decoration: none;
-            color: white;
-            background-color: #00032A;
-            padding: 10px 20px 10px 20px;
-            font-size: 1.6rem;
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.9rem;
-        }
-
-        .col a:hover {
-            transform: scale(1.08);
-        }
-
-    }
-
-
-
-
-    /** DESKTOP MEDIA QUERY **/
-    @media only screen and (min-width: 885px) {
-        header li a {
-            padding: 0;
-            margin: 0 20px;
-            font-size: 2rem;
-        }
-
-        #splash_txt {
-            width: 500px;
-            height: 14vh;
-            margin-top: 27.5vh;
-        }
-
-        #splash_txt h1 {
-            font-size: 7rem;
-        }
-    }
+}
