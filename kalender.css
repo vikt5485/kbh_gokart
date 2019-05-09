@@ -1,31 +1,26 @@
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 200%;
-    margin-bottom: 15%;
-    margin-left: 0%;
-    padding-left: 0%;
+    width: 150%;
+
 }
 
 
 td,
 th {
-    border: 1px solid #dddddd;
     text-align: left;
     margin-left: 1%;
-    width: 10%;
-    height: 10%;
+    width: 9%;
+    height: 9%;
 }
 
-@media only screen and (min-width: 600px) {
 
 
-    #kalender {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-    }
+#kalender {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 0.25%;
 }
+
 
 .pkalender {
     text-align: center;
@@ -34,3 +29,18 @@ th {
 .red {
     background-color: indianred;
 }
+
+.nummer {
+    text-align: left;
+    font-size: 2rem;
+    padding-right: 1%;
+    text-decoration: underline;
+    color: #d6d0d0;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+#titel {
+    margin-top: 2%;
+}
+
+.bo

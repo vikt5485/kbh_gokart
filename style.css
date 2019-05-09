@@ -50,7 +50,7 @@ section {
     padding: 20px;
 }
 
-#forside .txt {
+.txt {
     padding: 10px;
 }
 
@@ -266,7 +266,7 @@ img {
 
 /**** KALENDER ****/
 caption {
-    border: solid 1px white;
+    border: solid 2px black;
     background: #AA0009;
     height: 3em;
     line-height: 3em;
@@ -290,21 +290,23 @@ table,
 th,
 tr {
     text-align: center;
-    vertical-align: middle;
+
+
 }
 
 table thead th {
-    border: solid 1px white;
+    border: solid 2px black;
     width: 3em;
     height: 2em;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     background-color: #00032A;
     color: white;
+
 }
 
 table tbody td {
-    border: solid 1px gray;
+    border: solid 2px black;
     height: 5em;
     background-color: #25254a;
     padding: 0;
@@ -326,7 +328,7 @@ tbody a {
 
 
 tbody a:hover {
-    background: #AA0009;
+    background: #40415F;
     color: white;
 }
 
@@ -386,47 +388,6 @@ FFC91F gul
 #om_os .video {
     flex-basis: 400px;
     flex-grow: 1;
-    margin-top: 70px;
-}
-
-#om_os .img {
-    flex-basis: 200px;
-    flex-grow: 1;
-    position: relative;
-    width: 30vw;
-    height: 15vw;
-    margin-left: 20px;
-}
-
-#om_os .img:nth-child(1) {
-    background-image: url(billeder/gokart2.png);
-    background-size: cover;
-    background-position: 100%;
-}
-
-#om_os .img:nth-child(2) {
-    background-image: url(billeder/vareksted2.png);
-    background-size: cover;
-    background-position: 100%;
-}
-
-#om_os .img:nth-child(3) {
-    background-image: url(billeder/billard.png);
-    background-size: cover;
-}
-
-@media only screen and (max-width: 750px) {
-
-    #om_os .img {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 840px) {
-
-    #om_os .overskrift_2 {
-        text-align: left;
-    }
 }
 
 
@@ -434,119 +395,23 @@ FFC91F gul
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
     justify-content: space-between;
 }
 
-#kontakt h1 {
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
-
-#kontakt p {
-    text-align: center
-}
-
-
 #kontakt .txt {
-    flex-basis: 400px;
+    flex-basis: 300px;
     flex-grow: 1;
     margin-top: 110px;
 }
 
-
-#kort {
-    flex-basis: 400px;
+#kontakt .kort {
+    flex-basis: 300px;
     flex-grow: 1;
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
 }
-
-#googleMap {
-    width: 100%;
-    margin-top: 80px;
-    text-align: center;
-}
-
-
-#kontakt .logo_sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 500px;
-}
-
-
-#kontakt .logo {
-    flex-basis: 50px;
-    flex-grow: 1;
-    position: relative;
-    height: 20vw;
-    margin: 10px;
-}
-
-#kontakt .logo:nth-child(1) {
-    background-image: url(kontakt_logo/k%C3%B8benhavns_kommune_hvid.png-copy-300x180.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#kontakt .logo:nth-child(2) {
-    background-image: url(kontakt_logo/DASU%20logo_udentekst.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#kontakt .logo:nth-child(3) {
-    background-image: url(kontakt_logo/FIA_logo.svg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#kontakt .logo:nth-child(4) {
-    background-image: url(kontakt_logo/logo_dif.png);
-    background-size: 200%;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-}
-
-#kontakt .logo:nth-child(5) {
-    background-image: url(kontakt_logo/kontrolrapport_logo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-
-#kontakt .img {
-    flex-basis: 200px;
-    flex-grow: 1;
-    position: relative;
-    width: 30vw;
-    height: 15vw;
-    margin: 20px;
-}
-
-#kontakt .img:nth-child(1) {
-    background-image: url(billeder/bane.png);
-    background-size: cover;
-    background-position: 100%;
-}
-
-#kontakt .img:nth-child(2) {
-    background-image: url(billeder/gokart1.png);
-    background-size: cover;
-    background-position: 100%;
-}
-
-#kontakt .img:nth-child(3) {
-    background-image: url(billeder/opbevaring2.png);
-    background-size: cover;
-    background-position: 100%;
-}
-
-@media only screen and (max-width: 750px) {
-
-    #kontakt .img {
-        display: none;
-    }
-}
-
 
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 750px) {
