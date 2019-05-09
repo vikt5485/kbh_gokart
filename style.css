@@ -455,7 +455,6 @@ FFC91F gul
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
     justify-content: space-between;
 }
 
@@ -464,85 +463,74 @@ FFC91F gul
     margin-bottom: 70px;
 }
 
+#kontakt p {
+    text-align: center
+}
+
 
 #kontakt .txt {
-    flex-basis: 300px;
+    flex-basis: 400px;
     flex-grow: 1;
-    margin: 20px;
+    margin-top: 110px;
 }
+
+
+#kort {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#googleMap {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+
 
 #kontakt .logo_sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    justify-content: space-between;
+    max-width: 500px;
 }
+
 
 #kontakt .logo {
     flex-basis: 50px;
     flex-grow: 1;
     position: relative;
-    margin-left: 20px;
+    height: 20vw;
+    margin: 10px;
 }
 
 #kontakt .logo:nth-child(1) {
     background-image: url(kontakt_logo/k%C3%B8benhavns_kommune_hvid.png-copy-300x180.png);
     background-size: 100%;
-    background-position: 50%;
     background-repeat: no-repeat;
-    width: 100%;
-    margin-top: 20px;
-    ¨
 }
 
 #kontakt .logo:nth-child(2) {
     background-image: url(kontakt_logo/DASU%20logo_udentekst.jpg);
     background-size: 100%;
-    background-position: 50%;
-    width: 20vw;
-    height: 8vw;
-    margin-top: 20px;
     background-repeat: no-repeat;
 }
 
 #kontakt .logo:nth-child(3) {
     background-image: url(kontakt_logo/FIA_logo.svg.png);
     background-size: 100%;
-    background-position: 50%;
-    width: 100%;
-    margin-top: 20px;
-    background-color: white;
     background-repeat: no-repeat;
 }
 
 #kontakt .logo:nth-child(4) {
     background-image: url(kontakt_logo/logo_dif.png);
     background-size: 200%;
-    background-position: 50%;
-    width: 20vw;
-    max-height: 100%;
-    max-width: 100%;
+    background-position: 50% 0;
     background-repeat: no-repeat;
 }
 
 #kontakt .logo:nth-child(5) {
     background-image: url(kontakt_logo/kontrolrapport_logo.png);
     background-size: 100%;
-    width: 20vw;
-    height: 19.4vw;
     background-repeat: no-repeat;
-}
-
-
-#googleMap {
-    flex-basis: 300px;
-    flex-grow: 1;
-    width: 300px;
-    height: 80px;
-    margin-top: 70px;
-    text-align: center;
-    margin: 20px;
-    margin-top: 70px;
 }
 
 
@@ -552,7 +540,7 @@ FFC91F gul
     position: relative;
     width: 30vw;
     height: 15vw;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 #kontakt .img:nth-child(1) {
@@ -579,6 +567,7 @@ FFC91F gul
         display: none;
     }
 }
+
 
 /** TABLET MEDIA QUERY **/
 @media only screen and (min-width: 750px) {
