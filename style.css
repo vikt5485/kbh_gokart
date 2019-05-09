@@ -490,6 +490,118 @@ li {
         background-color: aqua;
     }
 
+    #kontakt .logo_sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+    }
+
+
+    #kontakt .logo {
+        flex-basis: 50px;
+        flex-grow: 1;
+        position: relative;
+        margin: 10px;
+        background-repeat: no-repeat;
+        max-width: 15vw;
+        height: 20vw;
+    }
+
+
+    #kontakt .logo:nth-child(1) {
+        background-image: url(kontakt_logo/k%C3%B8benhavns_kommune_hvid.png-copy-300x180.png);
+    }
+
+
+    #kontakt .logo:nth-child(2) {
+        background-image: url(kontakt_logo/DASU%20logo_udentekst.jpg);
+        background-size: 100%;
+    }
+
+
+    #kontakt .logo:nth-child(3) {
+        background-image: url(kontakt_logo/FIA_logo.svg.png);
+    }
+
+
+    #kontakt .logo:nth-child(4) {
+        background-image: url(kontakt_logo/logo_dif.png);
+        background-position: 50% 0;
+    }
+
+
+    #kontakt .logo:nth-child(5) {
+        background-image: url(kontakt_logo/kontrolrapport_logo.png);
+    }
+
+
+
+    /*
+    #kontakt .logo_sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+    }
+
+    #kontakt .logo {
+        flex-basis: 50px;
+        flex-grow: 1;
+        background-size: 100%;
+        height: 20vw;
+    }
+
+    #kontakt .logo:nth-child(1) {
+        background-image: url(kontakt_logo/k%C3%B8benhavns_kommune_hvid.png-copy-300x180.png);
+        background-repeat: no-repeat;
+
+
+    }
+
+    #kontakt .logo:nth-child(2) {
+        background-image: url(kontakt_logo/DASU%20logo_udentekst.jpg);
+        background-repeat: no-repeat;
+
+    }
+
+    #kontakt .logo:nth-child(3) {
+        background-image: url(kontakt_logo/FIA_logo.svg.png);
+        background-repeat: no-repeat;
+
+    }
+
+    #kontakt .logo:nth-child(4) {
+        background-image: url(kontakt_logo/logo_dif.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+
+
+    }
+
+    #kontakt .logo:nth-child(5) {
+        background-image: url(kontakt_logo/kontrolrapport_logo.png);
+        background-repeat: no-repeat;
+
+    }
+*/
+
+    #kontakt .img {
+        flex-basis: 200px;
+        flex-grow: 1;
+        position: relative;
+        width: 30vw;
+        height: 15vw;
+        margin-left: 20px;
+    }
+
+    #kontakt .img:nth-child(1) {
+        background-image: url(billeder/gokart2.png);
+        background-size: 100%;
+        background-position: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+
     /** TABLET MEDIA QUERY **/
     @media only screen and (min-width: 750px) {
         header {
@@ -568,10 +680,6 @@ li {
         }
 
         #blivmedlem .image {
-            margin-top: 0;
-        }
-
-        #kontakt .txt {
             margin-top: 0;
         }
 
