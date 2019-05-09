@@ -50,8 +50,15 @@ section {
     padding: 20px;
 }
 
+#forside {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(46, 47, 72);
+}
+
 #forside .txt {
     padding: 10px;
+    text-align: center;
 }
 
 .anchor {
@@ -237,6 +244,11 @@ img {
     width: 100%;
 }
 
+#blivmedlem {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgb(46, 47, 72);
+}
 
 #blivmedlem .sectionwrapper {
     /* parent flex */
@@ -265,6 +277,12 @@ img {
 }
 
 /**** KALENDER ****/
+#kalender_wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgb(46, 47, 72);
+}
+
 caption {
     border: solid 1px white;
     background: #AA0009;
@@ -373,21 +391,24 @@ FFC91F gul
     flex-wrap: wrap;
     margin-bottom: 30px;
     justify-content: space-between;
+    flex-direction: column;
 }
 
+#om_os {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(46, 47, 72);
+}
 
 #om_os .txt1 {
+    padding: 10px;
     margin-top: 110px;
-    flex-basis: 400px;
-    flex-grow: 1;
+}
+
+#om_os .txt2 {
     padding: 10px;
 }
 
-#om_os .video {
-    flex-basis: 400px;
-    flex-grow: 1;
-    margin-top: 70px;
-}
 
 #om_os .img {
     flex-basis: 200px;
@@ -402,25 +423,19 @@ FFC91F gul
     background-image: url(billeder/gokart2.png);
     background-size: cover;
     background-position: 100%;
+    width: 100%;
+    margin-left: 0;
 }
 
 #om_os .img:nth-child(2) {
-    background-image: url(billeder/vareksted2.png);
-    background-size: cover;
-    background-position: 100%;
+    display: none;
 }
 
 #om_os .img:nth-child(3) {
-    background-image: url(billeder/billard.png);
-    background-size: cover;
+    display: none;
 }
 
-@media only screen and (max-width: 750px) {
 
-    #om_os .img {
-        display: none;
-    }
-}
 
 @media only screen and (min-width: 840px) {
 
@@ -431,6 +446,12 @@ FFC91F gul
 
 
 /***** KONTAKT *****/
+#kontakt {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgb(46, 47, 72);
+}
+
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -594,12 +615,42 @@ FFC91F gul
         padding: 0;
     }
 
+    #om_os .img:nth-child(2) {
+        background-image: url(billeder/vareksted2.png);
+        background-size: cover;
+        background-position: 100%;
+        display: block;
+    }
+
+    #om_os .img:nth-child(3) {
+        background-image: url(billeder/billard.png);
+        background-size: cover;
+        display: block;
+    }
+
+    #om_os .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
     #om_os .txt1 {
         margin-top: 0;
+        padding: 10px;
+        flex-basis: 300px;
+        flex-grow: 1;
     }
+
+    #om_os .video {
+        margin-top: 10px;
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
 
     #blivmedlem .txt {
         margin-top: 0;
+
     }
 
     #blivmedlem h1 {
@@ -681,7 +732,6 @@ FFC91F gul
 
     .col a:hover {
         transform: scale(1.08);
-
     }
 
 }
