@@ -295,7 +295,6 @@ FFC91F gul
 #om_os .img {
     flex-basis: 200px;
     flex-grow: 1;
-
     position: relative;
     width: 30vw;
     height: 15vw;
@@ -354,6 +353,67 @@ FFC91F gul
     margin: 20px;
 }
 
+#kontakt .logo_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#kontakt .logo {
+    flex-basis: 50px;
+    flex-grow: 1;
+    position: relative;
+    margin-left: 20px;
+}
+
+#kontakt .logo:nth-child(1) {
+    background-image: url(kontakt_logo/k%C3%B8benhavns_kommune_hvid.png-copy-300x180.png);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 20px;
+    ¨
+}
+
+#kontakt .logo:nth-child(2) {
+    background-image: url(kontakt_logo/DASU%20logo_udentekst.jpg);
+    background-size: 100%;
+    background-position: 50%;
+    width: 20vw;
+    height: 8vw;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+
+#kontakt .logo:nth-child(3) {
+    background-image: url(kontakt_logo/FIA_logo.svg.png);
+    background-size: 100%;
+    background-position: 50%;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+#kontakt .logo:nth-child(4) {
+    background-image: url(kontakt_logo/logo_dif.png);
+    background-size: 200%;
+    background-position: 50%;
+    width: 20vw;
+    max-height: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+#kontakt .logo:nth-child(5) {
+    background-image: url(kontakt_logo/kontrolrapport_logo.png);
+    background-size: 100%;
+    width: 20vw;
+    height: 19.4vw;
+    background-repeat: no-repeat;
+}
 
 
 #googleMap {
