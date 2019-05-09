@@ -7,7 +7,7 @@
     <title>KGB - Kalender</title>
     <link rel="stylesheet" href="kalender.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:400,700" rel="stylesheet">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -35,6 +35,93 @@
         </nav>
     </header>
 
+    <h1>Kalender</h1>
+
+    <div class="pkalender">
+        <p>Åben Man - Tor. 14 - 21 & Lør. 9.30 - 15.30 </p>
+        <p>Hold øje med ændringer på kalenderen i cafeteriaet og her</p>
+    </div>
+    <div id="kalender">
+        <table summary="a calendar">
+            <caption>
+                <h1>Maj 2019</h1>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Man</th>
+                    <th scope="col">Tir</th>
+                    <th scope="col">Ons</th>
+                    <th scope="col">Tor</th>
+                    <th scope="col">Fre</th>
+                    <th scope="col">Lør</th>
+                    <th scope="col">Søn</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="null">29</td>
+                    <td class="null">30</td>
+                    <td class="aflyst"><a href="#">1 <br>1. Maj</a>
+                    </td>
+                    <td><a href="#">2 <br> Kørsel: <br>15.00 - 18.00</a></td>
+                    <td class="ons_lob"><a href="#">3 <br>SM træning 12-17</a></td>
+                    <td class="ons_lob"><a href="#">4 <br>SM løb 9-19</a></td>
+                    <td class="aflyst"><a href="#">5</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">6 <br> Kørsel: <br>15.00 - 20.00</a></td>
+                    <td><a href="#">7 <br> Kørsel: <br>15.00 - 18.00</a></td>
+                    <td class="ons_lob"><a href="#">8 <br> Onsdagsløb <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">9 <br> Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td class="selected"><a href="#">10</a></td>
+                    <td><a href="#">11</a></td>
+                    <td class="aflyst"><a href="#">12</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">13 <br> Kørsel: <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">14 <br> Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td><a href="#">15 <br> Kørsel: <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">16 <br> Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td class="aflyst"><a href="#">17 <br> Store Bededag</a></td>
+                    <td class="aflyst"><a href="#">18</a></td>
+                    <td class="aflyst"><a href="#">19</a></td>
+                </tr>
+
+
+                <tr>
+                    <td><a href="#">20 <br> Kørsel: <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">21 <br>Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td class="ons_lob"><a href="#">22 <br> Onsdagsløb <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">23 <br>Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td class="aflyst"><a href="#">24</a></td>
+                    <td><a href="#">25 <br>Kørsel: <br> 10.00 - 14.00</a></td>
+                    <td class="aflyst"><a href="#">26</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="#">27 <br> Kørsel: <br> 15.00 - 20.00</a></td>
+                    <td><a href="#">28 <br>Kørsel: <br> 15.00 - 18.00</a></td>
+                    <td><a href="#">29 <br> Kørsel: <br> 15.00 - 20.00</a></td>
+                    <td class="aflyst"><a href="#">30 <br>Kr. Himmelfartsdag </a> </td>
+                    <td><a href="#">31</a></td>
+                    <td class="null">1</td>
+                    <td class="null">2</td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+
+    <!--
     <div id="kalender">
         <div class="maj">
             <table>
@@ -54,7 +141,7 @@
                 <tr>
                     <td>1</td>
                     <td>Onsdag</td>
-                    <td>1. Maj</td>
+                    <td class="red">1. Maj</td>
                 </tr>
 
                 <tr>
@@ -427,6 +514,7 @@
         </div>
 
     </div>
+-->
 
     <footer>
         <div id="footer_1">
