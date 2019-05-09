@@ -375,6 +375,13 @@ FFC91F gul
     justify-content: space-between;
 }
 
+li {
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9rem;
+    margin: 10px;
+}
 
 #om_os .txt1 {
     margin-top: 110px;
