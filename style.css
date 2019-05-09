@@ -328,6 +328,52 @@ table tbody td {
     padding: 0;
 }
 
+table {
+    width: 150%;
+
+}
+
+
+td,
+th {
+    text-align: left;
+    margin-left: 1%;
+    width: 9%;
+    height: 9%;
+}
+
+
+
+#kalender {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 0.25%;
+}
+
+
+.pkalender {
+    text-align: center;
+}
+
+.red {
+    background-color: indianred;
+}
+
+.nummer {
+    text-align: left;
+    font-size: 2rem;
+    padding-right: 1%;
+    text-decoration: underline;
+    color: #d6d0d0;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+#titel {
+    margin-top: 2%;
+}
+
 #kalender a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
